@@ -18,13 +18,15 @@ func _process(delta: float) -> void:
 			position.x += 1 + speed
 	if Input.is_action_pressed("Left") and is_moving:
 			position.x -= 1 + speed
+	cutscene()
+	dash()
 	
-	#this stops the player from being able to move in certain scenarios where we went them not to be able to move
-func _cutscene():  
+	#this stops the player from being able to move in certain scenarios where we went them not to be able to movee
+func cutscene():  
 	if in_cutscene:
 		is_moving = false 
 		
-func _dash():
+func dash():
 	if Input.is_action_pressed("Dash") and Input.is_action_pressed("Up") and is_moving:
 		position.y -= 5
 		print(Input.is_action_just_pressed("Dash"))
