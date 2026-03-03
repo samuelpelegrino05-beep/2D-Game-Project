@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://csnhsdqvv3ana" path="res://Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_i5eh5"]
 [ext_resource type="PackedScene" uid="uid://b8tycoqhcm35o" path="res://Scene1.tscn" id="2_cyxyq"]
-[ext_resource type="Script" uid="uid://dhthfe4d3fbif" path="res://Player.gd" id="3_cyxyq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5noo7"]
 texture = ExtResource("1_i5eh5")
@@ -277,7 +276,6 @@ tile_set = SubResource("TileSet_u0wck")
 
 [node name="CharacterBody2D" parent="Entities" unique_id=1057022589 instance=ExtResource("2_cyxyq")]
 position = Vector2(-19, 4)
-script = ExtResource("3_cyxyq")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=61866709]
 zoom = Vector2(1.8, 1.8)

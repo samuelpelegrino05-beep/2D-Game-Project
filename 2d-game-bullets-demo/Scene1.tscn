@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b8tycoqhcm35o"]
+
+[ext_resource type="Script" uid="uid://dhthfe4d3fbif" path="res://Player.gd" id="1_30lbi"]
+[ext_resource type="Texture2D" uid="uid://ba81i5vatpdnx" path="res://icon.svg" id="1_x3g6e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_30lbi"]
+size = Vector2(40, 40)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1057022589]
+script = ExtResource("1_30lbi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=644137188]
+shape = SubResource("RectangleShape2D_30lbi")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=43725059]
+scale = Vector2(0.31204748, 0.31204748)
+texture = ExtResource("1_x3g6e")
+
+[node name="Muzzle" type="Marker2D" parent="." unique_id=1949317105]
+position = Vector2(20, 0)
