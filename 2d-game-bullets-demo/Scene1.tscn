@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b8tycoqhcm35o"]
 
 [ext_resource type="Script" uid="uid://dhthfe4d3fbif" path="res://Player.gd" id="1_30lbi"]
-[ext_resource type="Texture2D" uid="uid://ba81i5vatpdnx" path="res://icon.svg" id="1_x3g6e"]
+[ext_resource type="Texture2D" uid="uid://dn8vofueknq2u" path="res://icon.svg" id="1_x3g6e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_30lbi"]
 size = Vector2(40, 40)
@@ -17,4 +17,4 @@ scale = Vector2(0.31204748, 0.31204748)
 texture = ExtResource("1_x3g6e")
 
 [node name="Muzzle" type="Marker2D" parent="." unique_id=1949317105]
-position = Vector2(20, 0)
+position = Vector2(21, 0)
