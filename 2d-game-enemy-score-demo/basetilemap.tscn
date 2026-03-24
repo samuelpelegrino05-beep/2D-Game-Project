@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://bksydkq1si5lo" path="res://2D Dungeon Asset pack/fire_.png" id="8_5o8jq"]
 [ext_resource type="Texture2D" uid="uid://duc55rpam2dg" path="res://2D Dungeon Asset pack/traps_.png" id="9_db1hu"]
 [ext_resource type="Texture2D" uid="uid://5v17ta7xmc5s" path="res://2D Dungeon Asset pack/waterLavaAcid_.png" id="10_dusel"]
-[ext_resource type="Texture2D" path="res://Tilemap assets /forest_ [resources].png" id="11_bplu8"]
-[ext_resource type="Texture2D" path="res://Tilemap assets /KeyString.png" id="12_5ho2c"]
-[ext_resource type="Texture2D" path="res://Tilemap assets /tableObjects_.png" id="12_hclr8"]
+[ext_resource type="Texture2D" uid="uid://bmsbtmcgnnsh4" path="res://2D Dungeon Asset pack/forest_ [resources].png" id="11_bplu8"]
+[ext_resource type="Texture2D" uid="uid://m2pjcb4crm3b" path="res://2D Dungeon Asset pack/KeyString.png" id="12_5ho2c"]
+[ext_resource type="Texture2D" uid="uid://cpt1to1vi8aa1" path="res://2D Dungeon Asset pack/tableObjects_.png" id="12_hclr8"]
 [ext_resource type="Texture2D" path="res://Tilemap assets /interiorObjects_.png" id="13_5ho2c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lgh0m"]
