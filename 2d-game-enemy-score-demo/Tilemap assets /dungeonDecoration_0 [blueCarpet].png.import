@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpt1to1vi8aa1"
-path="res://.godot/imported/tableObjects_.png-9f45f371f5bdd47cd8ec44aa1802ab46.ctex"
+uid="uid://cq16u7pt5mrbv"
+path="res://.godot/imported/dungeonDecoration_0 [blueCarpet].png-0f7bf2a7fb9037a3fc8e23c61aad24fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D Dungeon Asset pack/tableObjects_.png"
-dest_files=["res://.godot/imported/tableObjects_.png-9f45f371f5bdd47cd8ec44aa1802ab46.ctex"]
+source_file="res://Tilemap assets /dungeonDecoration_0 [blueCarpet].png"
+dest_files=["res://.godot/imported/dungeonDecoration_0 [blueCarpet].png-0f7bf2a7fb9037a3fc8e23c61aad24fa.ctex"]
 
 [params]
 

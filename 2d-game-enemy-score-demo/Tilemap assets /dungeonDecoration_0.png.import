@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmsbtmcgnnsh4"
-path="res://.godot/imported/forest_ [resources].png-b1e8ebd9f85355b11423ac75bbd0c326.ctex"
+uid="uid://dy7u8r5ghqdan"
+path="res://.godot/imported/dungeonDecoration_0.png-5090c357936b2075e9194de77f386bb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D Dungeon Asset pack/forest_ [resources].png"
-dest_files=["res://.godot/imported/forest_ [resources].png-b1e8ebd9f85355b11423ac75bbd0c326.ctex"]
+source_file="res://Tilemap assets /dungeonDecoration_0.png"
+dest_files=["res://.godot/imported/dungeonDecoration_0.png-5090c357936b2075e9194de77f386bb3.ctex"]
 
 [params]
 

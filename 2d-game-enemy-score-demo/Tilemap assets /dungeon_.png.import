@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5v17ta7xmc5s"
-path="res://.godot/imported/waterLavaAcid_.png-06da61764f70771e6defe94e7ae885f7.ctex"
+uid="uid://crpec2m3acyd8"
+path="res://.godot/imported/dungeon_.png-88d0135017f1bf51d00db73adc3ae2ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D Dungeon Asset pack/waterLavaAcid_.png"
-dest_files=["res://.godot/imported/waterLavaAcid_.png-06da61764f70771e6defe94e7ae885f7.ctex"]
+source_file="res://Tilemap assets /dungeon_.png"
+dest_files=["res://.godot/imported/dungeon_.png-88d0135017f1bf51d00db73adc3ae2ae.ctex"]
 
 [params]
 

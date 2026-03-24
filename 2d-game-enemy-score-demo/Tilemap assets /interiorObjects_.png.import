@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bksydkq1si5lo"
-path="res://.godot/imported/fire_.png-3fa0674879d04f4990e9ff00c904d1d6.ctex"
+uid="uid://nt24caw84kac"
+path="res://.godot/imported/interiorObjects_.png-2f9a0d848bfbe42094e3849d179caaaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D Dungeon Asset pack/fire_.png"
-dest_files=["res://.godot/imported/fire_.png-3fa0674879d04f4990e9ff00c904d1d6.ctex"]
+source_file="res://Tilemap assets /interiorObjects_.png"
+dest_files=["res://.godot/imported/interiorObjects_.png-2f9a0d848bfbe42094e3849d179caaaf.ctex"]
 
 [params]
 

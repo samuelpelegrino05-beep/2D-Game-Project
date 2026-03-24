@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duc55rpam2dg"
-path="res://.godot/imported/traps_.png-cb996260b84f54d84d19560add44f750.ctex"
+uid="uid://byhrofx414r1"
+path="res://.godot/imported/acid_.png-6178f6f4717e75b72c171e00acbd7ea2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D Dungeon Asset pack/traps_.png"
-dest_files=["res://.godot/imported/traps_.png-cb996260b84f54d84d19560add44f750.ctex"]
+source_file="res://Tilemap assets /acid_.png"
+dest_files=["res://.godot/imported/acid_.png-6178f6f4717e75b72c171e00acbd7ea2.ctex"]
 
 [params]
 

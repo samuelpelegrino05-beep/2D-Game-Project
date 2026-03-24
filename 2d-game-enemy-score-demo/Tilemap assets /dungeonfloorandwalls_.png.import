@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m2pjcb4crm3b"
-path="res://.godot/imported/KeyString.png-cefdb8f10dce9cced6d9555546706bb0.ctex"
+uid="uid://ccaguypriovxi"
+path="res://.godot/imported/dungeonfloorandwalls_.png-aed32ceb9524e50544f1be2ea71d5e69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D Dungeon Asset pack/KeyString.png"
-dest_files=["res://.godot/imported/KeyString.png-cefdb8f10dce9cced6d9555546706bb0.ctex"]
+source_file="res://Tilemap assets /dungeonfloorandwalls_.png"
+dest_files=["res://.godot/imported/dungeonfloorandwalls_.png-aed32ceb9524e50544f1be2ea71d5e69.ctex"]
 
 [params]
 

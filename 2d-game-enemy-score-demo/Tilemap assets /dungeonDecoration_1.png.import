@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cykyf3mgv7gs7"
-path="res://.godot/imported/dungeonDecoration_0 [greenCarpet].png-6c71c3d8c2db9d171f55f3ceeb439723.ctex"
+uid="uid://xsrtts34rarx"
+path="res://.godot/imported/dungeonDecoration_1.png-822dc527881dd04a267c6a3fef10563e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D Dungeon Asset pack/dungeonDecoration_0 [greenCarpet].png"
-dest_files=["res://.godot/imported/dungeonDecoration_0 [greenCarpet].png-6c71c3d8c2db9d171f55f3ceeb439723.ctex"]
+source_file="res://Tilemap assets /dungeonDecoration_1.png"
+dest_files=["res://.godot/imported/dungeonDecoration_1.png-822dc527881dd04a267c6a3fef10563e.ctex"]
 
 [params]
 

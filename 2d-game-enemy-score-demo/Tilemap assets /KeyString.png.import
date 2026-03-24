@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://snbpvkb2ts08"
-path="res://.godot/imported/acid_.png-55f1d541cd5c7541bf5c86ab0c37be93.ctex"
+uid="uid://5mt7rt22hagn"
+path="res://.godot/imported/KeyString.png-4f5d24d2faf06516a90d959e7059ea28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D Dungeon Asset pack/acid_.png"
-dest_files=["res://.godot/imported/acid_.png-55f1d541cd5c7541bf5c86ab0c37be93.ctex"]
+source_file="res://Tilemap assets /KeyString.png"
+dest_files=["res://.godot/imported/KeyString.png-4f5d24d2faf06516a90d959e7059ea28.ctex"]
 
 [params]
 
