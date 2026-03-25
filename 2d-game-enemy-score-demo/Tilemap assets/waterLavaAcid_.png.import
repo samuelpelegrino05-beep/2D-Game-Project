@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds0xy1pubr311"
-path="res://.godot/imported/waterLavaAcid_.png-c5ff0deb5f793cee0f8c19928d403219.ctex"
+path="res://.godot/imported/waterLavaAcid_.png-a712497cc34b54192f7c16098c0a7a28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilemap assets /waterLavaAcid_.png"
-dest_files=["res://.godot/imported/waterLavaAcid_.png-c5ff0deb5f793cee0f8c19928d403219.ctex"]
+source_file="res://Tilemap assets/waterLavaAcid_.png"
+dest_files=["res://.godot/imported/waterLavaAcid_.png-a712497cc34b54192f7c16098c0a7a28.ctex"]
 
 [params]
 

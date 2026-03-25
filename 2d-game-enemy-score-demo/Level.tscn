@@ -265,6 +265,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_5noo7")
 
 [node name="Node2D" type="Node2D" unique_id=603846372]
+position = Vector2(-1, -1)
 
 [node name="Walls" type="Node2D" parent="." unique_id=79652217]
 
