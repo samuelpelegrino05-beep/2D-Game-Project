@@ -1,19 +1,20 @@
 [gd_scene format=4 uid="uid://df73wdw0uymwu"]
 
-[ext_resource type="Texture2D" uid="uid://crpec2m3acyd8" path="res://Tilemap assets /dungeon_.png" id="1_0xc50"]
-[ext_resource type="Texture2D" uid="uid://xsrtts34rarx" path="res://Tilemap assets /dungeonDecoration_1.png" id="2_cqtwj"]
-[ext_resource type="Texture2D" uid="uid://ccaguypriovxi" path="res://Tilemap assets /dungeonfloorandwalls_.png" id="3_4wush"]
-[ext_resource type="Texture2D" uid="uid://dy7u8r5ghqdan" path="res://Tilemap assets /dungeonDecoration_0.png" id="4_tqbcg"]
-[ext_resource type="Texture2D" uid="uid://ds0xy1pubr311" path="res://Tilemap assets /waterLavaAcid_.png" id="5_xrvht"]
-[ext_resource type="Texture2D" uid="uid://5s7th3ugjo76" path="res://Tilemap assets /traps_.png" id="6_fkpt7"]
-[ext_resource type="Texture2D" uid="uid://cq16u7pt5mrbv" path="res://Tilemap assets /dungeonDecoration_0 [blueCarpet].png" id="7_oo8pk"]
-[ext_resource type="Texture2D" uid="uid://cfb5r7sbyc2gg" path="res://Tilemap assets /dungeonDecoration_0 [greenCarpet].png" id="8_ve5kr"]
-[ext_resource type="Texture2D" uid="uid://ur45fqmyhgug" path="res://Tilemap assets /dungeonDecoration_0 [redCarpet].png" id="9_04gut"]
-[ext_resource type="Texture2D" uid="uid://cyonx5pxphrkr" path="res://Tilemap assets /fire_.png" id="10_qfwsa"]
-[ext_resource type="Texture2D" uid="uid://dphkuh42gotk0" path="res://Tilemap assets /forest_ [resources].png" id="11_ggqhs"]
-[ext_resource type="Texture2D" uid="uid://5mt7rt22hagn" path="res://Tilemap assets /KeyString.png" id="12_odgis"]
-[ext_resource type="Texture2D" uid="uid://jkevn17jq3ay" path="res://Tilemap assets /tableObjects_.png" id="13_lr7q6"]
-[ext_resource type="Texture2D" uid="uid://nt24caw84kac" path="res://Tilemap assets /interiorObjects_.png" id="14_yttfh"]
+[ext_resource type="Texture2D" uid="uid://crpec2m3acyd8" path="res://Tilemap assets/dungeon_.png" id="1_0xc50"]
+[ext_resource type="Texture2D" uid="uid://xsrtts34rarx" path="res://Tilemap assets/dungeonDecoration_1.png" id="2_cqtwj"]
+[ext_resource type="Texture2D" uid="uid://ccaguypriovxi" path="res://Tilemap assets/dungeonfloorandwalls_.png" id="3_4wush"]
+[ext_resource type="Texture2D" uid="uid://dy7u8r5ghqdan" path="res://Tilemap assets/dungeonDecoration_0.png" id="4_tqbcg"]
+[ext_resource type="Texture2D" uid="uid://ds0xy1pubr311" path="res://Tilemap assets/waterLavaAcid_.png" id="5_xrvht"]
+[ext_resource type="Texture2D" uid="uid://5s7th3ugjo76" path="res://Tilemap assets/traps_.png" id="6_fkpt7"]
+[ext_resource type="Texture2D" uid="uid://cq16u7pt5mrbv" path="res://Tilemap assets/dungeonDecoration_0 [blueCarpet].png" id="7_oo8pk"]
+[ext_resource type="Texture2D" uid="uid://cfb5r7sbyc2gg" path="res://Tilemap assets/dungeonDecoration_0 [greenCarpet].png" id="8_ve5kr"]
+[ext_resource type="Texture2D" uid="uid://ur45fqmyhgug" path="res://Tilemap assets/dungeonDecoration_0 [redCarpet].png" id="9_04gut"]
+[ext_resource type="Texture2D" uid="uid://cyonx5pxphrkr" path="res://Tilemap assets/fire_.png" id="10_qfwsa"]
+[ext_resource type="Texture2D" uid="uid://dphkuh42gotk0" path="res://Tilemap assets/forest_ [resources].png" id="11_ggqhs"]
+[ext_resource type="Texture2D" uid="uid://5mt7rt22hagn" path="res://Tilemap assets/KeyString.png" id="12_odgis"]
+[ext_resource type="Texture2D" uid="uid://jkevn17jq3ay" path="res://Tilemap assets/tableObjects_.png" id="13_lr7q6"]
+[ext_resource type="Texture2D" uid="uid://nt24caw84kac" path="res://Tilemap assets/interiorObjects_.png" id="14_yttfh"]
+[ext_resource type="PackedScene" uid="uid://d2ohy4j6hfvow" path="res://tilemaps/key.tscn" id="15_cqtwj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lgh0m"]
 texture = ExtResource("1_0xc50")
@@ -3703,6 +3704,7 @@ distance = 361.0
 
 [node name="TileMap" type="TileMap" unique_id=1340448793]
 texture_filter = 1
+position = Vector2(0, 3)
 tile_set = SubResource("TileSet_41kj7")
 format = 2
 
@@ -3730,7 +3732,7 @@ tile_map_data = PackedByteArray("AAAUABoAAQAEAAoAAAAUABsAAQAEAAsAAAAVABoAAQAFAAo
 tile_set = SubResource("TileSet_wj4g5")
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="." unique_id=553790814]
-tile_map_data = PackedByteArray("AAAOABoAAAAMAAUAAAAOABsAAAAMAAYAAAANABoAAAAIAAUAAAANABsAAAAIAAYAAAAMABoAAAAHAAUAAAAMABsAAAAHAAYAAAARABoAAAAIAAUAAAASABoAAAAMAAUAAAAQABoAAwAFAAEAAAAUABoAAAAHAAUAAAAVABoAAAAIAAUAAAAWABoAAwAHAAEAAAAPABwAAgADAAEAAAAQABwAAgAEAAEAAAAOABkAAgADAAEAAAAPABkAAgAEAAEAAAAVABwAAgACAAEAAAAWAAoAAgABAAQAAAAWAAsAAgABAAUAAAAXAAoAAgACAAQAAAAXAAsAAgACAAUAAAAPABcAAgABAAEAAAAQABUAAgADAAEAAAARABUAAgAEAAEAAAASABMAAgABAAEAAAAXABYAAgABAAEAAAAUABYAAgADAAEAAAAVABYAAgAEAAEAAAAWABMAAgACAAEAAAATABcAAgACAAEAAAAWABkAAgADAAEAAAAXABkAAgAEAAEAAAAQAA8AAgADAAcAAAAXAA0AAgADAAcAAAAVAA8AAgADAAEAAAAWAA8AAgAEAAEAAAAQAAsAAgACAAEAAAALAAwAAgABAAMAAAANAA8AAQAKAAEAAAAVAAUABAALAAQAAAAVAAYABAALAAUAAAANAAUABAAKAAQAAAANAAYABAAKAAUAAAAOAAUAAQAHAAEAAAAUAAcAAgADAAEAAAAVAAcAAgAEAAEAAAASAAMAAAAMAAEAAAAQAAMAAAAHAAMAAAAQAAQAAAAHAAQAAAASAAQAAAAMAAIAAAARAAMAAAAJAAEAAAARAAQAAAAJAAIAAAARAAcAAAAJAAMAAAARAAgAAAAJAAQAAAAQAAcAAAAHAAEAAAAQAAgAAAAHAAIAAAASAAcAAwAHAAEAAAASAAgAAAAMAAIAAAALAAIAAQAHAAEAAAAXAAcAAQAIAAIAAAATAAIAAgADAAEAAAAUAAIAAgAEAAEAAAANAP//AgACAAEAAAAMAPv/AgACAAEAAAALAP3/AgADAAEAAAAMAP3/AgAEAAEAAAAQAP7/AgADAAEAAAARAP7/AgAEAAEAAAAOAPz/AgADAAEAAAAPAPz/AgAEAAEAAAARAPz/AgACAAEAAAA=")
+tile_map_data = PackedByteArray("AAAOABoAAAAMAAUAAAAOABsAAAAMAAYAAAANABoAAAAIAAUAAAANABsAAAAIAAYAAAAMABoAAAAHAAUAAAAMABsAAAAHAAYAAAARABoAAAAIAAUAAAASABoAAAAMAAUAAAAQABoAAwAFAAEAAAAUABoAAAAHAAUAAAAVABoAAAAIAAUAAAAWABoAAwAHAAEAAAAPABwAAgADAAEAAAAQABwAAgAEAAEAAAAOABkAAgADAAEAAAAPABkAAgAEAAEAAAAVABwAAgACAAEAAAAWAAoAAgABAAQAAAAWAAsAAgABAAUAAAAXAAoAAgACAAQAAAAXAAsAAgACAAUAAAAPABcAAgABAAEAAAAQABUAAgADAAEAAAARABUAAgAEAAEAAAASABMAAgABAAEAAAAXABYAAgABAAEAAAAUABYAAgADAAEAAAAVABYAAgAEAAEAAAAWABMAAgACAAEAAAATABcAAgACAAEAAAAWABkAAgADAAEAAAAXABkAAgAEAAEAAAAQAA8AAgADAAcAAAAXAA0AAgADAAcAAAAVAA8AAgADAAEAAAAWAA8AAgAEAAEAAAAQAAsAAgACAAEAAAANAA8AAQAKAAEAAAAVAAUABAALAAQAAAAVAAYABAALAAUAAAANAAUABAAKAAQAAAANAAYABAAKAAUAAAAOAAUAAQAHAAEAAAAUAAcAAgADAAEAAAAVAAcAAgAEAAEAAAASAAMAAAAMAAEAAAAQAAMAAAAHAAMAAAAQAAQAAAAHAAQAAAASAAQAAAAMAAIAAAARAAMAAAAJAAEAAAARAAQAAAAJAAIAAAARAAcAAAAJAAMAAAARAAgAAAAJAAQAAAAQAAcAAAAHAAEAAAAQAAgAAAAHAAIAAAASAAcAAwAHAAEAAAASAAgAAAAMAAIAAAALAAIAAQAHAAEAAAAXAAcAAQAIAAIAAAATAAIAAgADAAEAAAAUAAIAAgAEAAEAAAANAP//AgACAAEAAAAMAPv/AgACAAEAAAALAP3/AgADAAEAAAAMAP3/AgAEAAEAAAAQAP7/AgADAAEAAAARAP7/AgAEAAEAAAAOAPz/AgADAAEAAAAPAPz/AgAEAAEAAAARAPz/AgACAAEAAAA=")
 tile_set = SubResource("TileSet_ytd4u")
 
 [node name="Area2D world boundary" type="Area2D" parent="." unique_id=1075423691]
@@ -3750,6 +3752,9 @@ shape = SubResource("WorldBoundaryShape2D_2tn3w")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D world boundary" unique_id=377302327]
 shape = SubResource("WorldBoundaryShape2D_jdvdf")
+
+[node name="Key" parent="." unique_id=1594759937 instance=ExtResource("15_cqtwj")]
+position = Vector2(179, 195)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=2077579659]
 visible = false
