@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cktcwb62aot51"]
+
+[ext_resource type="Script" uid="uid://dioquru24qyyh" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://bpxg2im88qtor" path="res://PressStart2P-vaV7.ttf" id="2_7vrkn"]
+
+[node name="Main Menu" type="Node2D" unique_id=217539661]
+script = ExtResource("1_06t4h")
+
+[node name="Button Manager" type="Control" parent="." unique_id=1565607969]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="Button Manager" unique_id=403899098]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 128.0
+offset_right = 835.35486
+offset_bottom = 284.0
+theme_override_fonts/font = ExtResource("2_7vrkn")
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="Button Manager" unique_id=1814818204]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 291.0
+offset_right = 836.35486
+offset_bottom = 447.0
+theme_override_fonts/font = ExtResource("2_7vrkn")
+text = "Settings"
+
+[node name="Quit" type="Button" parent="Button Manager" unique_id=1611746016]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 458.0
+offset_right = 835.35486
+offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("2_7vrkn")
+text = "Quit"
+
+[node name="Label" type="Label" parent="." unique_id=936915973]
+offset_left = 64.0
+offset_top = 36.0
+offset_right = 1088.0
+offset_bottom = 124.0
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 64
+text = "Escape The Tower"
+
+[connection signal="pressed" from="Button Manager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button Manager/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Button Manager/Quit" to="." method="_on_quit_pressed"]
