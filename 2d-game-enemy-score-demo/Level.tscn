@@ -275,6 +275,7 @@ tile_set = SubResource("TileSet_u0wck")
 [node name="BulletSpawn" type="Node2D" parent="." unique_id=651473334]
 
 [node name="Entities" type="Node2D" parent="." unique_id=2058209044]
+position = Vector2(1, 0)
 
 [node name="character" parent="Entities" unique_id=1057022589 instance=ExtResource("2_cyxyq")]
 
