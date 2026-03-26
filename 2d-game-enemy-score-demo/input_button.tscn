@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://il56dimhg71a"]
+
+[ext_resource type="FontFile" uid="uid://biqfshydtu5ek" path="res://pixeloid-font/PixeloidSans-lxa3y.ttf" id="1_8pwxk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ucovy"]
+bg_color = Color(0, 0, 0, 0.2627451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7x12n"]
+bg_color = Color(1, 1, 1, 0.2627451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ivw0l"]
+bg_color = Color(1, 1, 1, 0.2627451)
+
+[node name="InputButton" type="Button" unique_id=1063419870]
+custom_minimum_size = Vector2(0, 36)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ucovy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7x12n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ivw0l")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1755394488]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1702291559]
+layout_mode = 2
+
+[node name="LabelAction" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1499304658]
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("1_8pwxk")
+theme_override_font_sizes/font_size = 24
+text = "Action Name"
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="MarginContainer/HBoxContainer" unique_id=560732939]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="LabelInput" type="Label" parent="MarginContainer/HBoxContainer" unique_id=2085896057]
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("1_8pwxk")
+theme_override_font_sizes/font_size = 24
+text = "Input Key"
+vertical_alignment = 1

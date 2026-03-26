@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://do0spa0nkts8h"]
+
+[ext_resource type="Script" uid="uid://ce11bnacpi1no" path="res://input_settings.gd" id="1_dyv2g"]
+[ext_resource type="PackedScene" uid="uid://il56dimhg71a" path="res://input_button.tscn" id="1_ww7g3"]
+[ext_resource type="FontFile" uid="uid://biqfshydtu5ek" path="res://pixeloid-font/PixeloidSans-lxa3y.ttf" id="2_sjini"]
+[ext_resource type="Script" uid="uid://qo6q6giuwyc2" path="res://exit_button.gd" id="3_smshf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dyv2g"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sjini"]
+bg_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_smshf"]
+bg_color = Color(1, 1, 1, 0)
+
+[node name="Input Settings" type="Control" unique_id=1888266469]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dyv2g")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=76795158]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -435.0
+offset_top = -269.0
+offset_right = 435.0
+offset_bottom = 269.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=89507485]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1543807355]
+layout_mode = 2
+
+[node name="ExitButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1107675252]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_sjini")
+theme_override_font_sizes/font_size = 48
+text = "X"
+script = ExtResource("3_smshf")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=337826811]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ControlsList" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer" unique_id=1830472061]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="InputButton" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/ControlsList" unique_id=1063419870 instance=ExtResource("1_ww7g3")]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_dyv2g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sjini")
+theme_override_styles/hover = SubResource("StyleBoxFlat_smshf")
+
+[node name="InputButton2" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/ControlsList" unique_id=210936439 instance=ExtResource("1_ww7g3")]
+layout_mode = 2
+
+[node name="InputButton3" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/ControlsList" unique_id=1309360197 instance=ExtResource("1_ww7g3")]
+layout_mode = 2
+
+[node name="InputButton4" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/ControlsList" unique_id=1133313613 instance=ExtResource("1_ww7g3")]
+layout_mode = 2
+
+[node name="InputButton5" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/ControlsList" unique_id=1340300566 instance=ExtResource("1_ww7g3")]
+layout_mode = 2
+
+[node name="ResetButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1355790476]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_sjini")
+theme_override_font_sizes/font_size = 32
+text = "Reset To Default"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
