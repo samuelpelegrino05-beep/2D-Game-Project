@@ -9,7 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://qvgo2775c0rb" path="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Walk_Base/Walk_Up-Sheet.png" id="7_bwfjh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yxww1"]
-radius = 8.0
+radius = 18.0
+height = 64.44
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x1sy7"]
 atlas = ExtResource("2_wdpcj")
@@ -255,13 +256,15 @@ animations = [{
 }]
 
 [node name="character" type="CharacterBody2D" unique_id=1057022589]
-position = Vector2(275, 301)
+position = Vector2(285, 281)
+safe_margin = 0.001
 script = ExtResource("1_30lbi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=644137188]
 shape = SubResource("CapsuleShape2D_yxww1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1811022290]
-position = Vector2(0, -1)
+position = Vector2(7.867813e-06, 0)
+scale = Vector2(2.0781252, 1.8437498)
 sprite_frames = SubResource("SpriteFrames_uv5p5")
 animation = &"Idle_Down"
