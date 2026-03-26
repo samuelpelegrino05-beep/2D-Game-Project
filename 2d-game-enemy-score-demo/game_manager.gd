@@ -14,3 +14,7 @@ func set_score_label(label: Label):
 func update_label():
 	if score_label:
 		score_label.text = "Score: " + str(score)
+
+var visited = []
+var key_found = []
+var opened_doors = []

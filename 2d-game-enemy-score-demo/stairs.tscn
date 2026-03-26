@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dtopd683rq54w"]
+
+[node name="Stairs" type="Area2D" unique_id=997922681]
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1813861603]

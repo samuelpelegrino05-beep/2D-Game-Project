@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="2D Game Enemy Score Demo"
-run/main_scene="uid://dmy7nlb8rsj7t"
+run/main_scene="uid://cktcwb62aot51"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*uid://duqt0okr7nc6m"
+RoomTransition="*uid://byva78cu3gwju"
 
 [display]
 
@@ -69,6 +70,7 @@ Dash={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
