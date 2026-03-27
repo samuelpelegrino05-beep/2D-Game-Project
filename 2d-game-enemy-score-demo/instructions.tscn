@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://bjqiooepnxdlt"]
+
+[ext_resource type="FontFile" uid="uid://bu3wg14iwvptc" path="res://pixeloid-font/PixeloidMono-nAOpP.ttf" id="1_jh4dl"]
+[ext_resource type="Script" uid="uid://mej4lvtupfnb" path="res://instructions.gd" id="2_dt5x2"]
+[ext_resource type="FontFile" uid="uid://bpxg2im88qtor" path="res://PressStart2P-vaV7.ttf" id="2_gosh8"]
+[ext_resource type="FontFile" uid="uid://biqfshydtu5ek" path="res://pixeloid-font/PixeloidSans-lxa3y.ttf" id="3_dt5x2"]
+[ext_resource type="FontFile" uid="uid://hvrecpfbnoy3" path="res://ARCADECLASSIC.TTF" id="4_jxc20"]
+
+[sub_resource type="Theme" id="Theme_nqnh2"]
+default_font = ExtResource("1_jh4dl")
+
+[sub_resource type="Theme" id="Theme_vlgeb"]
+default_font = ExtResource("3_dt5x2")
+default_font_size = 33
+
+[node name="INSTRUCTIONS" type="Control" unique_id=849829739]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_nqnh2")
+script = ExtResource("2_dt5x2")
+
+[node name="You escaped the tower" type="Label" parent="." unique_id=646247018]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.62700003
+anchor_top = 0.564
+anchor_right = 0.62700003
+anchor_bottom = 0.564
+offset_left = -517.304
+offset_top = -533.0
+offset_right = 250.69598
+offset_bottom = -402.0
+theme_override_fonts/font = ExtResource("2_gosh8")
+theme_override_font_sizes/font_size = 64
+text = "INSTRUCTIONS"
+horizontal_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=45743430]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 195.0
+offset_right = 1141.0
+offset_bottom = 860.0
+theme = SubResource("Theme_vlgeb")
+theme_override_fonts/bold_font = ExtResource("4_jxc20")
+text = "You're stuck in a monster-ridden tower! The only way to escape is to get through mobs of angry monsters, avoid obstacles such a lava, and FIND A KEY to unlock the final door to escape!! 
+
+- To shoot spells, click trackpad. 
+- To use arrow keys or W,A,S,D to move up, down, right, and left. 
+- Hold SHIFT to dash. 
+
+If you are killed by enemies OR if you fall into the lava, you will RESET AT THE START! 
+
+GOOD LUCK ON YOUR ESCAPE!
+"
+fit_content = true
+
+[node name="Start" type="Button" parent="." unique_id=452366587]
+layout_mode = 0
+offset_left = 306.0
+offset_top = 804.0
+offset_right = 829.35486
+offset_bottom = 960.0
+theme_override_fonts/font = ExtResource("2_gosh8")
+text = "Start Game 
+(for real this time)"

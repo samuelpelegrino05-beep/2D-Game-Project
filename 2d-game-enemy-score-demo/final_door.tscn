@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://gocbwt1wpdut"]
 
-[ext_resource type="Script" uid="uid://dryg640orpwkr" path="res://final_door.gd" id="1_4i7ah"]
+[ext_resource type="Script" uid="uid://2frjuw8yoeam" path="res://door.tscn.gd" id="1_4i7ah"]
 [ext_resource type="Texture2D" uid="uid://dpe3ie5pb0fex" path="res://2D Dungeon Asset pack/dungeonDecoration_1.png" id="2_g22k8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7kryh"]
