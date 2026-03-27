@@ -1,7 +1,6 @@
 extends StaticBody2D
 
 @export var door_id: String
-@export var you_escaped_the_tower: String
 
 func _ready():
 	if door_id in GameManager.opened_doors:
@@ -12,7 +11,7 @@ func _on_area_2d_body_entered(_body):
 		$AnimationPlayer.play("Open")
 		GameManager.opened_doors.append(door_id)
 		await $AnimationPlayer.animation_finished
-		queue_free()
+		get_tree().change_scene_to_file("res://You escaped the tower.tscn")
 	else:
 		$AnimationPlayer.play("Closed")
 	
