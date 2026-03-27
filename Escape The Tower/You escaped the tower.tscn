@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://dud874e5n8hbf"]
+
+[ext_resource type="Script" uid="uid://y5ykyokclaqc" path="res://youescapedthetower.gd" id="1_62e2m"]
+[ext_resource type="FontFile" uid="uid://bpxg2im88qtor" path="res://PressStart2P-vaV7.ttf" id="2_qtu10"]
+[ext_resource type="FontFile" uid="uid://hvrecpfbnoy3" path="res://ARCADECLASSIC.TTF" id="3_dh4jo"]
+[ext_resource type="Script" uid="uid://cetjiwa0gread" path="res://score_label.gd" id="4_k35pa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_72pl7"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control" unique_id=2103501681]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_62e2m")
+
+[node name="You escaped the tower" type="Label" parent="." unique_id=130807656]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.62700003
+anchor_top = 0.564
+anchor_right = 0.62700003
+anchor_bottom = 0.564
+offset_left = -520.304
+offset_top = -440.0
+offset_right = 247.69598
+offset_bottom = -309.0
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 64
+text = "YOU ESCAPED 
+THE TOWER!"
+horizontal_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=132419321]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 298.0
+offset_right = 799.0
+offset_bottom = 436.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_dh4jo")
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxFlat_72pl7")
+text = " Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_k35pa")
+
+[node name="Play again" type="Button" parent="." unique_id=688427468]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 491.0
+offset_right = 835.35486
+offset_bottom = 647.0
+theme_override_fonts/font = ExtResource("2_qtu10")
+text = "Play Again?"
+
+[node name="Quit" type="Button" parent="." unique_id=1763148527]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 700.0
+offset_right = 837.35486
+offset_bottom = 856.0
+theme_override_fonts/font = ExtResource("2_qtu10")
+text = "Quit"
+
+[connection signal="pressed" from="Play again" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

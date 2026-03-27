@@ -1,0 +1,134 @@
+[gd_scene format=3 uid="uid://hlvmgw8u0okx"]
+
+[ext_resource type="Script" uid="uid://lsrrck2h3631" path="res://path_follow_2d.gd" id="1_bixls"]
+[ext_resource type="Texture2D" uid="uid://b602b51qtv6rt" path="res://Pixel Crawler - Free Pack/Entities/Mobs/Orc Crew/Orc - Warrior/Idle/Idle-Sheet.png" id="2_bv7fa"]
+[ext_resource type="Texture2D" uid="uid://c6cp4osyil1gk" path="res://Pixel Crawler - Free Pack/Entities/Mobs/Orc Crew/Orc - Warrior/Run/Run-Sheet.png" id="3_5gnde"]
+[ext_resource type="PackedScene" uid="uid://cm233v3wuwlxw" path="res://orc_killbox.tscn" id="4_gc0bp"]
+
+[sub_resource type="Curve2D" id="Curve2D_mp7oj"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -265.7982, -106.36363, 0, 0, 0, 0, -26.078, -106.298, 0, 0, 0, 0, -265.795, -106.331, 0, 0, 0, 0, -265.7982, -106.36363)
+}
+point_count = 4
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0jom"]
+atlas = ExtResource("2_bv7fa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hveug"]
+atlas = ExtResource("2_bv7fa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yexi5"]
+atlas = ExtResource("2_bv7fa")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yj075"]
+atlas = ExtResource("2_bv7fa")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yt52k"]
+atlas = ExtResource("3_5gnde")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xtnh"]
+atlas = ExtResource("3_5gnde")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oohp3"]
+atlas = ExtResource("3_5gnde")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ae6i"]
+atlas = ExtResource("3_5gnde")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cn7gr"]
+atlas = ExtResource("3_5gnde")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_62tv6"]
+atlas = ExtResource("3_5gnde")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gqx1p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0jom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hveug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yexi5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yj075")
+}],
+"loop": true,
+"name": &"ORC_IDLE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yt52k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xtnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oohp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ae6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cn7gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_62tv6")
+}],
+"loop": true,
+"name": &"ORC_RUN",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlmoy"]
+size = Vector2(61.41455, 81.99997)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mp7oj"]
+
+[node name="Path2D" type="Path2D" unique_id=1104698440]
+scale = Vector2(1.3474056, 1.034188)
+curve = SubResource("Curve2D_mp7oj")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=1028172366]
+position = Vector2(-63.721302, -106.308304)
+rotation = 0.00027380127
+progress = 202.07687
+rotates = false
+cubic_interp = false
+script = ExtResource("1_bixls")
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="PathFollow2D" unique_id=2095724961]
+scale = Vector2(1.0030121, 0.96694225)
+collision_mask = 2
+slide_on_ceiling = false
+
+[node name="ORC_WARRIOR" type="AnimatedSprite2D" parent="PathFollow2D/CharacterBody2D2" unique_id=1436195098]
+position = Vector2(-0.74046624, -1.9997897)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_gqx1p")
+animation = &"ORC_RUN"
+autoplay = "ORC_IDLE"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/CharacterBody2D2/ORC_WARRIOR" unique_id=1840165861]
+position = Vector2(0.1375122, 15.97142)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_dlmoy")
+
+[node name="Orc killbox" parent="PathFollow2D/CharacterBody2D2/ORC_WARRIOR/CollisionShape2D" unique_id=660269837 instance=ExtResource("4_gc0bp")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/CharacterBody2D2/ORC_WARRIOR/CollisionShape2D/Orc killbox" unique_id=682267066]
+shape = SubResource("RectangleShape2D_mp7oj")
