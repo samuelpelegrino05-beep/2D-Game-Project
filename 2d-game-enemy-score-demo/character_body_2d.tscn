@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cbxpmsi2ya51l"]
+[gd_scene format=3 uid="uid://c1at1hosnnwxa"]
 
 [ext_resource type="Script" uid="uid://dhthfe4d3fbif" path="res://Player.gd" id="1_dd465"]
 [ext_resource type="Texture2D" uid="uid://c6kwtnpp86f7n" path="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Idle_Base/Idle_Down-Sheet.png" id="2_lhvu3"]
@@ -252,9 +252,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_htsih"]
-size = Vector2(25, 36)
+size = Vector2(19, 32)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1085470543]
+collision_layer = 2
 script = ExtResource("1_dd465")
 
 [node name="PLAYER_SPRITE" type="AnimatedSprite2D" parent="." unique_id=952362165]
@@ -268,5 +269,5 @@ zoom = Vector2(2, 2)
 [node name="Area2D" type="Area2D" parent="." unique_id=660224102]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1698360231]
-position = Vector2(-2, 2)
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_htsih")
