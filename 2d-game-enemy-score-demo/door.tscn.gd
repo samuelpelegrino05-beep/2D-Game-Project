@@ -12,8 +12,7 @@ func _on_area_2d_body_entered(_body):
 		$AnimationPlayer.play("Open")
 		GameManager.opened_doors.append(door_id)
 		await $AnimationPlayer.animation_finished
-		
-		get_tree().change_scene_to_file(you_escaped_the_tower)
+		queue_free()
 	else:
 		$AnimationPlayer.play("Closed")
 	
