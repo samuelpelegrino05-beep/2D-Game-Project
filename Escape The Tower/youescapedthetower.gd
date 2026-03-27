@@ -15,7 +15,7 @@ func _on_play_again_pressed() -> void:
 
 	GameManager.score = 0
 	GameManager.player_health = GameManager.max_health
-	get_tree().reload_current_scene()
+	get_tree().change_scene_to_file("res://USETHISTILEMAP.tscn")
 
 func _on_quit_pressed() -> void:
 	get_tree().change_scene_to_file("res://main_menu.tscn")
