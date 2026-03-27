@@ -4,7 +4,8 @@ extends CharacterBody2D
 @export var DASH_SPEED: float = 400.0
 @export var DASH_TIME: float = 0.15
 
-@onready var animated_sprite = $AnimatedSprite2D
+@onready var animated_sprite = $PLAYER_SPRITE
+
 var last_direction := Vector2.DOWN
 
 var dash_velocity = Vector2.ZERO
@@ -88,20 +89,20 @@ func start_dash():
 func update_animation(direction: Vector2):
 	if direction != Vector2.ZERO:
 		if abs(direction.x) > abs(direction.y):
-			play_anim("Walk_Side")
+			play_anim("RUN_SIDE")
 			animated_sprite.flip_h = direction.x < 0
 		elif direction.y < 0:
-			play_anim("Walk_Up")
+			play_anim("RUN_UP")
 		else:
-			play_anim("Walk_Down")
+			play_anim("RUN_DOWN")
 	else:
 		if abs(last_direction.x) > abs(last_direction.y):
-			play_anim("Idle_Side")
+			play_anim("IDLE_SIDE")
 			animated_sprite.flip_h = last_direction.x < 0
 		elif last_direction.y < 0:
-			play_anim("Idle_Up")
+			play_anim("IDLE_UP")
 		else:
-			play_anim("Idle_Down")
+			play_anim("IDLE_DOWN")
 
 func play_anim(name: String):
 	if animated_sprite.animation != name:
