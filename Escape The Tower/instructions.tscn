@@ -40,18 +40,24 @@ text = "INSTRUCTIONS"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=45743430]
 layout_mode = 0
-offset_left = 42.0
-offset_top = 183.0
-offset_right = 1135.0
-offset_bottom = 848.0
+offset_left = 41.0
+offset_top = 130.0
+offset_right = 1134.0
+offset_bottom = 752.0
 theme = SubResource("Theme_vlgeb")
 theme_override_fonts/bold_font = ExtResource("4_jxc20")
-text = "You're stuck in a monster-ridden tower! The only way to escape is to get through mobs of angry monsters, avoid obstacles such a lava, and FIND A KEY to unlock the final door to escape!! 
+theme_override_font_sizes/normal_font_size = 31
+theme_override_font_sizes/bold_font_size = 31
+theme_override_font_sizes/bold_italics_font_size = 31
+theme_override_font_sizes/italics_font_size = 31
+theme_override_font_sizes/mono_font_size = 31
+text = "You're stuck in a monster-ridden tower! The only way to escape is to get through mobs of angry monsters, avoid obstacles such a lava, and FIND A KEY to unlock the final door to escape!! You can earn points through killing enemies and bouncing bullets, but you will lose points if your own bullet hits you.
 
 - To shoot spells, click trackpad or mouse
 - Use the pointer to aim.
 - To use arrow keys or W,A,S,D to move up, down, right, and left. 
 - Hold SHIFT to dash. 
+- Press ESC to pause.
 
 If you are killed by enemies OR if you fall into the lava, you will RESET AT THE START! 
 

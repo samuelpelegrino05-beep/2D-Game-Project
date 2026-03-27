@@ -6407,3 +6407,68 @@ collision_mask = 2
 position = Vector2(1236, 2275)
 scale = Vector2(2, 2)
 collision_mask = 2
+
+[node name="enemy28" parent="Skeletons" unique_id=376283093 instance=ExtResource("27_vrvh0")]
+position = Vector2(1988, -283)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy29" parent="Skeletons" unique_id=1750063906 instance=ExtResource("27_vrvh0")]
+position = Vector2(2388, -288)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy30" parent="Skeletons" unique_id=1088930572 instance=ExtResource("27_vrvh0")]
+position = Vector2(2357, 1)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy31" parent="Skeletons" unique_id=679119097 instance=ExtResource("27_vrvh0")]
+position = Vector2(2020, -22)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy32" parent="Skeletons" unique_id=214537171 instance=ExtResource("27_vrvh0")]
+position = Vector2(1189, -290)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy33" parent="Skeletons" unique_id=495004565 instance=ExtResource("27_vrvh0")]
+position = Vector2(1184, -26)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy34" parent="Skeletons" unique_id=2014505737 instance=ExtResource("27_vrvh0")]
+position = Vector2(1399, -236)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy35" parent="Skeletons" unique_id=914915371 instance=ExtResource("27_vrvh0")]
+position = Vector2(1584, -62)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy36" parent="Skeletons" unique_id=1139165062 instance=ExtResource("27_vrvh0")]
+position = Vector2(1216, 476)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy37" parent="Skeletons" unique_id=1749341863 instance=ExtResource("27_vrvh0")]
+position = Vector2(1988, 713)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy38" parent="Skeletons" unique_id=1745653484 instance=ExtResource("27_vrvh0")]
+position = Vector2(1423, 126)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy39" parent="Skeletons" unique_id=1450626421 instance=ExtResource("27_vrvh0")]
+position = Vector2(2197, -139)
+scale = Vector2(2, 2)
+collision_mask = 2
+
+[node name="enemy40" parent="Skeletons" unique_id=1860328706 instance=ExtResource("27_vrvh0")]
+position = Vector2(2222, -13)
+scale = Vector2(2, 2)
+collision_mask = 2
