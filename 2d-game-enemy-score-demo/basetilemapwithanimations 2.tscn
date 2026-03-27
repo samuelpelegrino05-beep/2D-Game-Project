@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://jkevn17jq3ay" path="res://Tilemap assets/tableObjects_.png" id="13_6s0hc"]
 [ext_resource type="Texture2D" uid="uid://nt24caw84kac" path="res://Tilemap assets/interiorObjects_.png" id="14_js6fr"]
 [ext_resource type="PackedScene" uid="uid://d2ohy4j6hfvow" path="res://key.tscn" id="15_rp4gv"]
-[ext_resource type="PackedScene" uid="uid://5qlrhtmefhnk" path="res://area_2d.tscn" id="16_3a62d"]
+[ext_resource type="PackedScene" uid="uid://5qlrhtmefhnk" path="res://lavakillbox.tscn" id="16_3a62d"]
 [ext_resource type="PackedScene" uid="uid://b8tycoqhcm35o" path="res://character.tscn" id="16_f625t"]
 [ext_resource type="PackedScene" uid="uid://gocbwt1wpdut" path="res://final_door.tscn" id="16_rvixk"]
 
